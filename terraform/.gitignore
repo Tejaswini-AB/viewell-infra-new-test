@@ -1,0 +1,22 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+plan_output.txt
+crash.log
+crash.*.log
+
+# Variable files that may hold secrets
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Local backend config (contains no secrets, but keep local overrides out of git)
+backend-config.hcl
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

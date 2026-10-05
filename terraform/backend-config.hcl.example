@@ -1,0 +1,11 @@
+# Copy this file to backend-config.hcl (gitignored) for local `terraform init`
+# runs. CI supplies these same values via -backend-config flags instead — see
+# .github/workflows/terraform-*.yml.
+#
+# Usage:
+#   cd environments/staging
+#   terraform init -backend-config=../../backend-config.hcl
+
+resource_group_name  = "rg-tfstate-uaen-01"
+storage_account_name = "sttfstateuaen0123"
+container_name        = "tfstate"

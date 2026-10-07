@@ -51,10 +51,10 @@ jobs:
 
       - name: Verify ARM variables
         run: |
-        echo "CLIENT_ID set? $([ -n "$ARM_CLIENT_ID" ] && echo YES || echo NO)"
-        echo "TENANT_ID set? $([ -n "$ARM_TENANT_ID" ] && echo YES || echo NO)"
-        echo "SUBSCRIPTION_ID set? $([ -n "$ARM_SUBSCRIPTION_ID" ] && echo YES || echo NO)"
-        echo "CLIENT_SECRET set? $([ -n "$ARM_CLIENT_SECRET" ] && echo YES || echo NO)"
+          echo "CLIENT_ID set? $([ -n "$ARM_CLIENT_ID" ] && echo YES || echo NO)"
+          echo "TENANT_ID set? $([ -n "$ARM_TENANT_ID" ] && echo YES || echo NO)"
+          echo "SUBSCRIPTION_ID set? $([ -n "$ARM_SUBSCRIPTION_ID" ] && echo YES || echo NO)"
+          echo "CLIENT_SECRET set? $([ -n "$ARM_CLIENT_SECRET" ] && echo YES || echo NO)"
 
       - name: Terraform init
         run: |
